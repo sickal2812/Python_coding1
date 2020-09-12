@@ -104,6 +104,10 @@ def remove_values_from_list(the_list, val):
 
 print(remove_values_from_list(mlist, 'del'))
 
+print(mlist)
+del a
+print(list(filter(lambda a: a!='del',mlist )))
+
 a = [(1,'age'),(10,'you'),(20,'get')]
 
 for (left,right) in a:

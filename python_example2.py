@@ -1,6 +1,10 @@
 
+# kakao num1
 
+temp = input()
 
-a = "abc"
+temp = temp.lower()
 
-print(a*3)
+temp = list(filter(lambda a : a!='.',temp))
+
+print(''.join(temp))
