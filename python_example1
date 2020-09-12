@@ -64,3 +64,47 @@ print(a) # "HI is too short"
 a = "    ji"
 print(a.lstrip())
 print(a)
+
+mlist = [1,2,3]
+print(mlist)
+
+mlist.append('hello')
+mlist.append(3)
+print(mlist)
+
+del mlist[1]
+print(mlist)
+print(len(mlist))
+
+test = 'str'
+print(type(test))
+if isinstance(test,int):
+    print("integer")
+
+del str
+
+mlist.append('abc')
+
+temp = len(mlist)
+for i in range(temp):
+    if isinstance(mlist[i],str):
+        mlist[i] = 'del' #형변환
+
+mlist.append('new')
+print(mlist) # [1, 3, 'del', 3, 'del', 'new']
+for i in range(len(mlist)):
+    if (str(type(mlist[i])) == "<class 'str'>"):
+        mlist[i] = 'del'
+print(mlist) # [1, 3, 'del', 3, 'del', 'del']
+
+print(list(filter(('del').__ne__,mlist)))
+print(mlist)
+def remove_values_from_list(the_list, val):
+   return [value for value in the_list if value != val]
+
+print(remove_values_from_list(mlist, 'del'))
+
+a = [(1,'age'),(10,'you'),(20,'get')]
+
+for (left,right) in a:
+    print(left,right)
