@@ -1,11 +1,66 @@
 
+print(1) # 프린트
 
-print(1)
-
-a = "123"
+a = "123" # 123 문자열출력
 print(a)
 
-b = "sickal"
+b = "sickal" # 문자열 더하기
 print(a+b)
+print(b*3) # 문자열 곱셈
 
-print(b*3)
+
+names = ['mike','jane','tom'] #리스트
+print(names)
+print(names[0])
+
+names = names + [20, 'good'] # 다른타입가능
+print(names)
+
+user1 = [] #배열
+user = {} # 딕셔너리
+
+fruit = {'color' : 'white'} # 딕셔너리 사용법
+fruit['size'] = 20
+print(fruit)
+
+# 포맷 메소드 사용 ('{}' .format() )
+my_str = 'My name is {}'.format('커피')
+print(my_str)
+my_str = 'aaa {}'.format('1, 2, 3.14')
+print(my_str)
+
+str = '배고프네요' # 문자열 인덱싱
+print(str[1])
+
+slice_str = '나는 천재다'
+print(slice_str[:2]) # 이상:미만
+print(slice_str[2:]) # 이상:미만
+
+print(slice_str.split()) # ' '로 나눠짐
+
+str = 'a:b:c:d:e--'
+print(str.split(':'))
+
+a = 'iamaboyandiamagirl'
+print(a.count('am')) # a에 들어있는 count('str')을 세준다
+
+print(a.index('am')) # a에 들어있는 index('str')의 위치 반환
+
+a = "sickal+Sickal"
+print(a.lower()) # hi
+print(a.upper()) # HI
+
+print(",".join(a))
+# rstrip (오른쪽) / strip(양쪽)
+print(a.strip())
+
+# replace
+a = "Life is too short"
+print(a)
+a = a.replace("Life", "HI")
+print(a) # "HI is too short"
+
+# lstript (왼쪽 공백 지우기)
+a = "    ji"
+print(a.lstrip())
+print(a)
