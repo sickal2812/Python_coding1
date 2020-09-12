@@ -1,0 +1,11 @@
+
+
+print(1)
+
+a = "123"
+print(a)
+
+b = "sickal"
+print(a+b)
+
+
